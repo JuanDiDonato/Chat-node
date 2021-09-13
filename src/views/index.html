@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    
+    <div style="text-align: center;">
+        <div style="padding: 5px;">
+            <h1>Chat!</h1>
+        </div> 
+        <div style="border: 1px solid black; padding: 5px;" id="chat">
+
+        </div>
+        <div style="padding:5px;">
+            <form action="">
+                <input type="text" id='message' placeholder="type a message">
+                <button type="submit" onclick="msj()">Send</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Importo el archivo socket.io.js, que se genera en node_modules cuando se instala-->
+    <script src="/socket.io/socket.io.js"></script>
+    <!--Importo chat.js, contiene configuraciones del socket desde el cliente-->
+    <script src="./chat.js"></script>
+    <!--Importo chat-envents, que contiene la funcionalidad de los eventos-->
+    <script src="./chat-events.js"></script>
+</body>
+</html>
